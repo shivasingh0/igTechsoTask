@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certificate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: white;
+        padding: 40px;
+      }
+      .container {
+        max-width: 900px;
+        background-color: white;
+        border: 15px solid #0e8cc3;
+        border-radius: 20px;
+        padding: 0px 40px;
+        text-align: center;
+        margin: auto;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .logo {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin: auto;
+        margin-right: 60px;
+      }
+      .contact-details {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+      .address {
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+      .title {
+        font-size: 35px;
+        color: #0e8cc3;
+        margin: 30px 0px 10px;
+        font-family: "Cinzel Decorative", serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+      .subtitle {
+        font-size: 22px;
+        margin-top: 20px;
+        font-family: "Cinzel Decorative", serif;
+        font-weight: 600;
+        font-style: normal;
+      }
+      .name {
+        font-size: 24px;
+        color: #e0bd8f;
+        margin-bottom: 30px;
+        text-transform: capitalize;
+      }
+      .description {
+        font-size: 17px;
+        max-width: 600px;
+        margin: auto;
+        text-align: center;
+      }
+      .info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+        text-align: center;
+      }
+      .info p {
+        font-size: 16px;
+      }
+      .signature-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .line {
+        border-top: 1px solid black;
+        margin-top: 10px;
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="contact-details">
+          <p>Register-ID: {{regId}}</p>
+          <p>Email: {{email}}</p>
+          <p>Phone no.: {{phone}}</p>
+        </div>
+        <div>
+          <img
+            class="logo"
+            src="https://i.pinimg.com/736x/80/88/86/808886d595af02ac5ca522af60976c16.jpg"
+            alt="logo"
+          />
+        </div>
+        <div class="address">
+          <p>{{address1}},</p>
+          <p>{{address2}},</p>
+          <p>{{address3}},</p>
+        </div>
+      </div>
+
+      <h1 class="title">Certificate of Half Marathon</h1>
+      <p class="subtitle">This Certificate Presented to</p>
+      <h2 class="name">{{name}}</h2>
+      <p class="description">
+        The certificate of achievement is awarded to individuals who have
+        demonstrated outstanding performance in their field. Here’s an example
+        text for a certificate.
+      </p>
+
+      <div class="info">
+        <p>Date of Birth: {{dob}}</p>
+        <p>Gender: {{gender}}</p>
+        <p>Blood Group: {{bloodGroup}}</p>
+      </div>
+
+      <div class="signature-block">
+        <div>
+          <p>{{dateTime}}</p>
+          <div class="line"></div>
+          <p>DATE-TIME</p>
+        </div>
+        <div>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz76TNqXFazdVOkyPUCtLmtqhqAZ6FwQSrHA&s"
+            alt="logo"
+          />
+        </div>
+        <div>
+          <p>{{signature}}</p>
+          <div class="line"></div>
+          <p>SIGNATURE</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
