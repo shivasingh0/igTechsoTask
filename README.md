@@ -21,7 +21,7 @@ Brief description of your Node.js project.
 4. nodemon / npm start
 ```
 
-### 📁 Schema
+### 📁 Body Json Data
 ``` Schema
 {
   "name": "Rajesh Yadav",
